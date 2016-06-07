@@ -3,6 +3,7 @@ $(document).ready(function() {
     var genre = $("#genre").val();
     var rating = $("#audienceRating").val();
 
+    $('#allShows').text("Show all shows");
     $(".comedy, .drama, .action").hide();
 
     if (genre === 'comedy' && rating === 'pg') {
@@ -24,10 +25,12 @@ $(document).ready(function() {
   });
   $("#allShows").click(function(event) {
     event.preventDefault();
-    $(".action, .drama, .comedy").toggle();
+    //$(".action, .drama, .comedy").toggle();
       if ($(this).text() === "Show all shows") {
+        $(".action, .drama, .comedy").show();
         $(this).text("Hide all shows");
       } else {
+        $(".action, .drama, .comedy").hide();
         $(this).text("Show all shows");
       }
   });
