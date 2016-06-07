@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Suggest A Show</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Answer some questions about what you want to watch and we will suggest a show. </h1>
+          <form id="show-form">
+            <div class="form-group">
+             <label for="genre">Genre</label>
+             <select type="text" class="form-control" id="genre">
+               <option value="comedy">Comedy</option>
+               <option value="action">Action</option>
+               <option value="drama">Drama</option>
+             </select>
+           </div>
+           <div class="form-group">
+            <label for="audienceRating">Audience Rating</label>
+            <select type="text" class="form-control" id="audienceRating">
+              <option value="pg">PG</option>
+              <option value="pg13">PG 13</option>
+              <option value="r">R</option>
+            </select>
+          </div>
+            <button class="btn" type="submit">Submit</button>
+            <button id="allShows" class="btn">Show all shows</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+
+        <table class="table table-bordered table-striped table-hover table-responsive">
+      	<thead>
+      		<tr>
+      			<th>
+      				Show Name
+      			</th>
+
+      			<th>
+      				Seasons
+      			</th>
+      			<th>
+      				Channel
+      			</th>
+            <th>
+              Rating
+            </th>
+      		</tr>
+      	</thead>
+      	<tbody>
+      		<tr class="comedy ratingR">
+      			<td>
+      				Silicon Valley
+      			</td>
+      			<td>
+      				3
+      			</td>
+      			<td>
+      				580
+      			</td>
+            <td>
+      				R
+      			</td>
+      		</tr>
+      		<tr class="action ratingR">
+      			<td>
+      				Game Of Thrones
+      			</td>
+      			<td>
+      				7
+      			</td>
+      			<td>
+      				581
+      			</td>
+            <td>
+      				R
+      			</td>
+      		</tr>
+      		<tr class="comedy ratingPG">
+      			<td>
+      				Modern Family
+      			</td>
+      			<td>
+      				5
+      			</td>
+      			<td>
+      				12
+      			</td>
+            <td>
+      				PG
+      			</td>
+      		</tr>
+      		<tr class="drama ratingPG13">
+      			<td>
+      				Fargo
+      			</td>
+      			<td>
+      				2
+      			</td>
+      			<td>
+      				62
+      			</td>
+            <td>
+      				PG-13
+      			</td>
+      		</tr>
+      		<tr class="action ratingPG">
+      			<td>
+      				X-Files
+      			</td>
+      			<td>
+      				10+
+      			</td>
+      			<td>
+      				32
+      			</td>
+            <td>
+      				PG
+      			</td>
+      		</tr>
+      		<tr class="drama ratingPG">
+      			<td>
+      				Mr. Robot
+      			</td>
+      			<td>
+      				1
+      			</td>
+      			<td>
+      				44
+      			</td>
+            <td>
+      				PG
+      			</td>
+      		</tr>
+      	</tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
